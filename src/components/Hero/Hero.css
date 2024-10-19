@@ -1,0 +1,160 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff3cd;
+    padding: 20px;
+  }
+  
+  .hero-left {
+    flex: 1;
+  }
+  
+  .hero-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .hero-right {
+    flex: 1.2;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-right h2 {
+    color: #f15a24;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group input[type="email"]:focus {
+    border-color: #f15a24;
+  }
+  
+  .verify-link {
+    font-size: 12px;
+    color: #f15a24;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  .verify-link:hover {
+    text-decoration: underline;
+  }
+  
+  .radio-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .radio-group input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .radio-group label {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .submit-button {
+    background-color: #f15a24;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .submit-button:hover {
+    background-color: #d04a20;
+  }
+  
+  @media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+    }
+  
+    .hero-right {
+        margin-top: 20px;
+        width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-right h2 {
+        font-size: 20px;
+    }
+  
+    .form-group input[type="text"],
+    .form-group input[type="email"] {
+        font-size: 12px;
+        padding: 8px;
+    }
+  
+    .submit-button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+        padding: 15px;
+    }
+  
+    .hero-right {
+        padding: 15px;
+    }
+  
+    .hero-right h2 {
+        font-size: 18px;
+    }
+  
+    .form-group input[type="text"],
+    .form-group input[type="email"] {
+        font-size: 12px;
+        padding: 6px;
+    }
+  
+    .submit-button {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+  }
+  
