@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+<div align="center">
+  <img src="./assets/banner.png" alt="Web Development coursework — matrimony platform front-end" width="100%" />
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-0A1024?style=flat-square&logo=react&logoColor=61DAFB)
+![React Router](https://img.shields.io/badge/React_Router-0A1024?style=flat-square&logo=reactrouter&logoColor=CA4245)
+![CSS3](https://img.shields.io/badge/CSS3-0A1024?style=flat-square&logo=css3&logoColor=1572B6)
+![Context](https://img.shields.io/badge/university_coursework-JNTU-22D3EE?style=flat-square&labelColor=0A1024)
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+University web development coursework: the front-end for **Annapurna Matrimony**, a matrimony platform with registration, sign-in and supporting company pages.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The brief was to build a multi-page React application with client-side routing and a consistent layout, without a backend. This repository is the submitted result, kept as a record of the coursework rather than presented as production work.
 
-### `npm test`
+## Preview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Annapurna Matrimony landing page](./assets/preview-home.jpg)
 
-### `npm run build`
+<sub>Screenshot captured from a local production build of this repository.</sub>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Seven routes** — `/`, `/signinsignup`, `/aboutus`, `/carrers`, `/contactus`, `/CMDdesk`, `/help`
+- **Sign-in / sign-up** screen
+- **Company pages** — about, careers, CMD's desk, help, contact
+- **Shared navbar and footer** across every route
+- **Responsive** layout
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech stack
 
-### `npm run eject`
+| Layer | Technology |
+|---|---|
+| Framework | React (Create React App) |
+| Routing | React Router DOM — 7 routes |
+| Styling | Hand-written CSS per component |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The dependency list here is deliberately minimal — React, React DOM, React Router and the Create React App toolchain. Nothing else is installed, and nothing installed goes unused.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+src/
+├── components/
+│   ├── Project/     Landing page composition
+│   ├── navbar/, footer/
+│   ├── Hero/
+│   └── Login/       Sign-in and sign-up
+├── pages/           AboutUs, Carrers, ContactUs, CMDdesk, Help
+└── App.js           7 route definitions
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Running locally
 
-## Learn More
+```bash
+git clone https://github.com/AJAY2043/webdev-jntu.git
+cd webdev-jntu
+npm install
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run build     # production build into ./build — builds cleanly
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Future improvements
 
-### Code Splitting
+If this were taken past coursework:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Set a real page title and favicon — `public/index.html` still says `React App`
+- Add a 404 route
+- Give the registration and sign-in forms real validation and a backend
+- Correct the spelling of `/carrers`
 
-### Analyzing the Bundle Size
+## Related
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+`AJAY2043/vijayareddy-website` is the client-facing version of this same application.
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Ajay Krishna Reddy Bhavanam** — Melbourne, Australia
+[LinkedIn](https://linkedin.com/in/ajay-krishna-reddy) · [GitHub](https://github.com/AJAY2043)
